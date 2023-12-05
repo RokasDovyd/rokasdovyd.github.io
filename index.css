@@ -1,0 +1,111 @@
+header {
+    font-family: 'Arial', sans-serif; 
+    font-size: 20px; 
+    font-weight: normal; 
+    background-color: #333; /* Add a background color */
+    color: #fff; /* Set text color to white */
+    padding: 20px; /* Increase padding for a thicker header */
+    text-align: center; /* Center-align text */
+    display: flex;
+    flex-direction: row; /* Change to row for multiple sections */
+    justify-content: center; /* Center both text and photo horizontally */
+    align-items: center;
+    
+}
+
+.header-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.header-text {
+    white-space: pre-line;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px; /* Add space between text and icons */
+    display: flex;
+    align-items: center;
+}
+
+.header-photo {
+    max-width: 200px; /* Adjust the size based on your preference */
+    height: auto;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.nav-link {
+    color: #3366cc; 
+    text-decoration: none;
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.nav-link:hover {
+    color: #ff6600;
+}
+
+section {
+    margin: 20px;
+    padding: 10px; 
+    border: 5px solid #999; 
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+@media screen and (max-width: 600px) {
+    header {
+        font-size: 18px;
+    }
+    section {
+        margin: 10px; 
+        padding: 5px;
+    }
+}
+@media print {
+    body {
+        font-family: 'Times New Roman', serif; 
+        line-height: 1.5; 
+    }
+
+    section {
+        page-break-inside: avoid; 
+        margin-bottom: 20px; 
+    }
+
+    img {
+        max-width: 100%;
+        height: auto; 
+    }
+
+    a {
+        display: none; 
+    }
+    #services{
+        display: none;
+    }
+}
+.social-icons {
+    margin-left: auto; /* Push icons to the right in the header */
+}
+.social-icons a {
+    color: #fff; /* Set icon color to white */
+    margin-left: 10px; /* Add spacing between icons */
+    font-size: 20px; /* Adjust the icon size */
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: #ff6600; /* Change color on hover */
+}
+#clock {
+    font-size: 24px;
+    font-family: Arial, sans-serif;
+    padding: 10px;
+    border: 1px solid #ccc;
+    display: inline-block;
+}

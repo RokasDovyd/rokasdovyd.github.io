@@ -1,0 +1,147 @@
+<!-- Rokas Dovydėnas -->
+
+<!DOCTYPE html>
+<html lang="lt">
+
+<head>
+    <meta charset='UTF-8'>
+    <title>9 lab</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="print.css" media="print">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Interaktyvus laikrodis</title>
+
+<script src="clock.js" defer></script>
+
+</head>
+
+<body>
+    <header id="header">
+        <div id="clock"></div>
+        <div class="header-text">
+        </div>
+        <div class="header-photo">
+            <img src="best-metal-guitars.jpg" alt="Your Photo" class="header-photo">
+        </div>
+        <nav>
+            <a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>Apie</span></a>
+            <a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Aprašymas</span></a>
+            <a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Atlikti darbai</span></a>
+            <a href="#services" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Paslaugos</span></a>
+
+            <div class="social-icons">
+                <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+            </div>
+            
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>Apie</h2>
+        <p>Rokas Dovydėnas</p>
+        <ul>
+            <li>Amžius: 20</li>
+            <li>Gimtinė: Rokiškis</li>
+            <li>Išsilavinimas: Vidurinys</li>
+            <li>Gyvena: Barakas</li>
+        </ul>
+        <img src="nuotrauka.jpg" alt="..." height="100px" width="100px">
+    </section>
+    <p>Tai yra rezidiumo formule:
+        <div id="formula-container" style="display: flex; align-items: center;">
+            <!-- Residue formula with MathML -->
+            <div id="math-container" style="margin-right: 10px;">
+                <math>
+                    <mrow>
+                        <!-- f(a) -->
+                        <mi>f</mi>
+                        <mo>(</mo>
+                        <mi>a</mi>
+                        <mo>)</mo>
+                        <mo>=</mo>
+                        <mfrac>
+                            <!-- Skaitiklis (1) -->
+                            <mn>1</mn>
+                            <!-- Vardiklis (2πi) -->
+                            <mrow>
+                                <mn>2πi</mn>
+                            </mrow>
+                        </mfrac>
+                        <!-- Integralo ženklas ∮ -->
+                        <mo>&#8750;</mo>
+                        <mfrac>
+                            <!-- skaitiklis f(z) -->
+                           <mn>f(z)</mn>
+                            <!-- vardiklis (z - a) -->
+                            <mrow>
+                                <mi>z</mi>
+                                <mo>-</mo>
+                                <mi>a</mi>
+                            </mrow>
+                        </mfrac>
+                        <!-- Paskutinis integralo ženklas dz -->
+                        <mi>dz</mi>
+                    </mrow>
+                </math>
+            </div>
+    
+            <!-- SVG Animation -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" style="border: 1px solid black;">
+                <circle cx="25" cy="25" r="20" fill="red">
+                    <animate attributeName="cx" values="25;75;25" dur="2s" repeatCount="indefinite" />
+                </circle>
+            </svg>
+        </div>
+        
+    </p>
+    
+
+    <section id="resume">
+        <h2>Aprašymas</h2>
+        <p>Rokas Dovydėnas</p>
+        <ul>
+            <li>Amžius: 20</li>
+            <li>Gimtinė: Rokiškis</li>
+            <li>Išsilavinimas: Vidurinys</li>
+            <li>Gyvena: Barakas</li>
+        </ul>        <img src="nuotrauka.jpg" alt="..." height="100px" width="100px">
+        
+        <!-- Printer-friendly link -->
+        <br>
+        <button onclick="window.print()">Spausdinti</button>
+    </section>
+
+    <section id="portfolio">
+        <h2>Atlikti darbai</h2>
+        <ul>
+            <li>6 Matlab darbai</li>
+            <li>Koliovkiumas</li>
+            <li>Html 2 Lab darbai</li>
+        <img src="nuotrauka2.png" alt="..." height="100px" width="100px">
+        <img src="nuotrauka.jpg" alt="..." height="100px" width="100px">
+        <img src="nuotrauka.jpg" alt="..." height="100px" width="100px">
+    </section>
+
+    <section id="services">
+        <h2>Paslaugos</h2>
+        <p>Vestuvių muzikantas</p>
+        <video width="500" height="500" controls>
+            <source src="405807787_7251126594899621_7703674035369286356_n.mp4" type="video/mp4">
+        </video>
+        <iframe width="500" height="500" src="https://www.youtube.com/embed/axiGV09C85A" title="Pufferfish eats carrot (full video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <br>
+        <audio width="560" height="315" controls>
+            <source src="Sleep Token - Jaws.mp3" type="audio/mp3">
+        </audio>
+    </section>
+    <footer>
+        <p>Kontaktai: rokas.dovydenas@gmail.com; +37061072017</p>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+        </div>
+    </footer>
+    
+</body>
+</html>
